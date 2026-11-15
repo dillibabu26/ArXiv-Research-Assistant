@@ -1,0 +1,4 @@
+# Optional extras — install only if you build the optional RAG component.
+# If faiss-cpu fails to install on your machine, the project falls back to
+# scikit-learn NearestNeighbors automatically, so this file is never required.
+faiss-cpu>=1.7.4

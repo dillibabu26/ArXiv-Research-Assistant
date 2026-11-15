@@ -1,0 +1,12 @@
+{
+  "status": "run",
+  "model": "google/flan-t5-large",
+  "base_url": "local-transformers",
+  "n_classification": 300,
+  "n_titles": 60,
+  "few_shot_example_ids": [
+    "2104.07412",
+    "1712.08244",
+    "2504.06921"
+  ]
+}

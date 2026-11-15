@@ -1,0 +1,5 @@
+params,val_macro_f1,epochs
+"{'hidden_layer_sizes': (256,), 'alpha': 0.0001}",0.7525638815959185,29
+"{'hidden_layer_sizes': (512,), 'alpha': 0.0001}",0.7534940111356505,19
+"{'hidden_layer_sizes': (512,), 'alpha': 0.001}",0.7536437873966986,19
+"{'hidden_layer_sizes': (512, 256), 'alpha': 0.0001}",0.7538494896193024,15

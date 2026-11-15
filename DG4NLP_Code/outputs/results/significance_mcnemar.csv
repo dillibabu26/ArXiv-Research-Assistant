@@ -1,0 +1,16 @@
+model_a,model_b,split,n,a_only_correct,b_only_correct,statistic,p_value,method,significant_at_0.05,bonferroni_alpha,significant_bonferroni
+Multinomial Naive Bayes,Logistic Regression,test,6728.0,290,434,28.244475138121548,1.0691937473773984e-07,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Multinomial Naive Bayes,Linear SVM,test,6728.0,303,464,33.3767926988266,7.592458483712703e-09,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Multinomial Naive Bayes,MiniLM embeddings + MLP,test,6728.0,505,609,9.523339317773788,0.0020287508815410972,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Multinomial Naive Bayes,Fine-tuned DistilBERT,test,6728.0,627,547,5.3160136286201025,0.021130297625190923,chi-squared (continuity-corrected),True,0.0033333333333333335,False
+Logistic Regression,Linear SVM,test,6728.0,173,190,0.7052341597796143,0.40103050999876816,chi-squared (continuity-corrected),False,0.0033333333333333335,False
+Logistic Regression,MiniLM embeddings + MLP,test,6728.0,520,480,1.521,0.2174682261435423,chi-squared (continuity-corrected),False,0.0033333333333333335,False
+Logistic Regression,Fine-tuned DistilBERT,test,6728.0,641,417,47.002835538752365,7.088407736022076e-12,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Linear SVM,MiniLM embeddings + MLP,test,6728.0,513,456,3.236326109391125,0.07202197332977989,chi-squared (continuity-corrected),False,0.0033333333333333335,False
+Linear SVM,Fine-tuned DistilBERT,test,6728.0,643,402,55.119617224880386,1.1341329961133844e-13,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+MiniLM embeddings + MLP,Fine-tuned DistilBERT,test,6728.0,630,446,31.12360594795539,2.4210908994302034e-08,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Multinomial Naive Bayes,LLM (zero-shot),eval_subset,,156,11,124.16766467065868,7.741767684727908e-29,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Logistic Regression,LLM (zero-shot),eval_subset,,157,12,122.69822485207101,1.6235653283728518e-28,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Linear SVM,LLM (zero-shot),eval_subset,,160,12,125.63372093023256,3.69811557132957e-29,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+MiniLM embeddings + MLP,LLM (zero-shot),eval_subset,,169,16,124.88648648648649,5.389095275229768e-29,chi-squared (continuity-corrected),True,0.0033333333333333335,True
+Fine-tuned DistilBERT,LLM (zero-shot),eval_subset,,168,18,119.36021505376344,8.733807222195315e-28,chi-squared (continuity-corrected),True,0.0033333333333333335,True

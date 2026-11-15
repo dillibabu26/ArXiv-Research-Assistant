@@ -1,0 +1,2 @@
+accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,n,model,key,split,invalid_rate,single_ms_median
+0.22333333333333333,0.4946376145708159,0.22333333333333333,0.17716817505105203,0.17716817505105203,300,LLM zero-shot (google/flan-t5-large),llm,eval_subset,0.0,6837.5

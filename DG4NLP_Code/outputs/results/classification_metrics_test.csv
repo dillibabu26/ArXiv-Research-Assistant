@@ -1,0 +1,6 @@
+model,key,split,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,n,batch_ms_per_doc,single_ms_median,tfidf_params,clf_params,val_macro_f1
+Multinomial Naive Bayes,naive_bayes,test,0.7366230677764566,0.736883564506308,0.7397553203664853,0.7361555778538798,0.7316483680450475,6728,0.3208,2.927,"{'ngram_range': (1, 2), 'max_features': 50000, 'min_df': 5, 'max_df': 0.9}",{'alpha': 0.1},0.7385
+Logistic Regression,logistic_regression,test,0.7580261593341261,0.7633908752466818,0.7588586775293672,0.7606464162343269,0.7573697947687156,6728,0.3487,1.06,"{'ngram_range': (1, 2), 'max_features': 50000, 'min_df': 2, 'max_df': 0.9}",{'C': 1.0},0.759
+Linear SVM,linear_svm,test,0.7605529131985731,0.7574349139983221,0.7658536136347533,0.7602011266819665,0.7558026698089038,6728,0.3443,1.063,"{'ngram_range': (1, 2), 'max_features': 50000, 'min_df': 5, 'max_df': 0.9}",{'C': 0.3},0.7594
+MiniLM embeddings + MLP,minilm_mlp,test,0.7520808561236623,0.7495661546684633,0.7593601280973021,0.752148939448778,0.7469959825948075,6728,40.5904,53.078,-,"{'hidden_layer_sizes': (512, 256), 'alpha': 0.0001}",0.7538
+Fine-tuned DistilBERT,distilbert,test,0.7247324613555292,0.7208781653138875,0.7375769737551487,0.7265566293800496,0.7211112953144162,6728,147.78,124.704,-,"lr=5e-05, epochs=2, batch=16, max_len=256, train=600/class",0.7338

@@ -1,0 +1,66 @@
+,precision,recall,f1-score,support,model
+cs.LG,0.5462,0.4173,0.4732,750.0,Linear SVM
+cs.CV,0.7524,0.7453,0.7488,750.0,Linear SVM
+cs.CL,0.7561,0.8227,0.788,750.0,Linear SVM
+cs.AI,0.6782,0.6267,0.6514,750.0,Linear SVM
+stat.ML,0.6907,0.7653,0.7261,750.0,Linear SVM
+cs.NE,0.8275,0.8573,0.8422,750.0,Linear SVM
+cs.RO,0.9028,0.916,0.9093,750.0,Linear SVM
+cs.CR,0.8743,0.9116,0.8925,656.0,Linear SVM
+eess.IV,0.7427,0.7909,0.766,416.0,Linear SVM
+cs.IR,0.8034,0.8054,0.8044,406.0,Linear SVM
+accuracy,0.7606,0.7606,0.7606,0.7606,Linear SVM
+macro avg,0.7574,0.7659,0.7602,6728.0,Linear SVM
+weighted avg,0.7542,0.7606,0.7558,6728.0,Linear SVM
+cs.LG,0.5335,0.488,0.5097,750.0,Logistic Regression
+cs.CV,0.7265,0.7507,0.7384,750.0,Logistic Regression
+cs.CL,0.7728,0.812,0.7919,750.0,Logistic Regression
+cs.AI,0.6619,0.6733,0.6675,750.0,Logistic Regression
+stat.ML,0.6906,0.744,0.7163,750.0,Logistic Regression
+cs.NE,0.834,0.8507,0.8422,750.0,Logistic Regression
+cs.RO,0.9128,0.8933,0.903,750.0,Logistic Regression
+cs.CR,0.8983,0.875,0.8865,656.0,Logistic Regression
+eess.IV,0.7786,0.7356,0.7565,416.0,Logistic Regression
+cs.IR,0.8249,0.766,0.7944,406.0,Logistic Regression
+accuracy,0.758,0.758,0.758,0.758,Logistic Regression
+macro avg,0.7634,0.7589,0.7606,6728.0,Logistic Regression
+weighted avg,0.7576,0.758,0.7574,6728.0,Logistic Regression
+cs.LG,0.5054,0.376,0.4312,750.0,Multinomial Naive Bayes
+cs.CV,0.7354,0.6893,0.7116,750.0,Multinomial Naive Bayes
+cs.CL,0.7626,0.8053,0.7834,750.0,Multinomial Naive Bayes
+cs.AI,0.627,0.612,0.6194,750.0,Multinomial Naive Bayes
+stat.ML,0.6465,0.7827,0.7081,750.0,Multinomial Naive Bayes
+cs.NE,0.804,0.8587,0.8304,750.0,Multinomial Naive Bayes
+cs.RO,0.8738,0.8773,0.8756,750.0,Multinomial Naive Bayes
+cs.CR,0.8636,0.8979,0.8804,656.0,Multinomial Naive Bayes
+eess.IV,0.73,0.7668,0.7479,416.0,Multinomial Naive Bayes
+cs.IR,0.8204,0.7315,0.7734,406.0,Multinomial Naive Bayes
+accuracy,0.7366,0.7366,0.7366,0.7366,Multinomial Naive Bayes
+macro avg,0.7369,0.7398,0.7362,6728.0,Multinomial Naive Bayes
+weighted avg,0.7312,0.7366,0.7316,6728.0,Multinomial Naive Bayes
+cs.LG,0.5127,0.4573,0.4834,750.0,MiniLM embeddings + MLP
+cs.CV,0.7259,0.724,0.725,750.0,MiniLM embeddings + MLP
+cs.CL,0.7354,0.8413,0.7848,750.0,MiniLM embeddings + MLP
+cs.AI,0.6888,0.5813,0.6305,750.0,MiniLM embeddings + MLP
+stat.ML,0.7354,0.6227,0.6744,750.0,MiniLM embeddings + MLP
+cs.NE,0.8155,0.884,0.8484,750.0,MiniLM embeddings + MLP
+cs.RO,0.8641,0.9493,0.9047,750.0,MiniLM embeddings + MLP
+cs.CR,0.902,0.9116,0.9067,656.0,MiniLM embeddings + MLP
+eess.IV,0.7184,0.8462,0.777,416.0,MiniLM embeddings + MLP
+cs.IR,0.7975,0.7759,0.7865,406.0,MiniLM embeddings + MLP
+accuracy,0.7521,0.7521,0.7521,0.7521,MiniLM embeddings + MLP
+macro avg,0.7496,0.7594,0.7521,6728.0,MiniLM embeddings + MLP
+weighted avg,0.7465,0.7521,0.747,6728.0,MiniLM embeddings + MLP
+cs.LG,0.469,0.3827,0.4214,750.0,Fine-tuned DistilBERT
+cs.CV,0.7092,0.66,0.6837,750.0,Fine-tuned DistilBERT
+cs.CL,0.8092,0.7293,0.7672,750.0,Fine-tuned DistilBERT
+cs.AI,0.6224,0.5933,0.6075,750.0,Fine-tuned DistilBERT
+stat.ML,0.6399,0.732,0.6828,750.0,Fine-tuned DistilBERT
+cs.NE,0.8097,0.8,0.8048,750.0,Fine-tuned DistilBERT
+cs.RO,0.8959,0.872,0.8838,750.0,Fine-tuned DistilBERT
+cs.CR,0.8764,0.9299,0.9024,656.0,Fine-tuned DistilBERT
+eess.IV,0.6641,0.8317,0.7385,416.0,Fine-tuned DistilBERT
+cs.IR,0.7131,0.8448,0.7734,406.0,Fine-tuned DistilBERT
+accuracy,0.7247,0.7247,0.7247,0.7247,Fine-tuned DistilBERT
+macro avg,0.7209,0.7376,0.7266,6728.0,Fine-tuned DistilBERT
+weighted avg,0.7219,0.7247,0.7211,6728.0,Fine-tuned DistilBERT

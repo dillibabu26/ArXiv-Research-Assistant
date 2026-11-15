@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Large data and trained artefacts (regenerate with train.py)
+data/raw/*
+data/processed/*
+models/classification/*
+models/embeddings/*
+!**/.gitkeep
+
+# Editor / OS
+.vscode/
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store

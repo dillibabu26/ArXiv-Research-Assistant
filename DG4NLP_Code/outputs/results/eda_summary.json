@@ -1,0 +1,270 @@
+{
+  "load_report": {
+    "source": "mendeley_csv",
+    "path": "C:\\Users\\dilli\\Downloads\\DG4NLP_latest_code\\data\\raw\\Mendeley_arXiv Scientific Research Paper Dataset.zip",
+    "lines_read": 287421,
+    "malformed": 0,
+    "missing_required": 0,
+    "filtered_out": 0,
+    "kept": 287421,
+    "notes": [
+      "publication dates 1993-08-01 to 2026-06-18"
+    ]
+  },
+  "schema": {
+    "n_rows": 287421,
+    "n_columns": 9,
+    "columns": [
+      "id",
+      "title",
+      "abstract",
+      "categories",
+      "authors",
+      "comments",
+      "doi",
+      "update_date",
+      "source"
+    ],
+    "dtypes": {
+      "id": "str",
+      "title": "str",
+      "abstract": "str",
+      "categories": "str",
+      "authors": "str",
+      "comments": "object",
+      "doi": "object",
+      "update_date": "str",
+      "source": "str"
+    },
+    "missing": {
+      "id": 0,
+      "title": 0,
+      "abstract": 0,
+      "categories": 0,
+      "authors": 0,
+      "comments": 287421,
+      "doi": 287421,
+      "update_date": 0,
+      "source": 0
+    },
+    "missing_pct": {
+      "id": 0.0,
+      "title": 0.0,
+      "abstract": 0.0,
+      "categories": 0.0,
+      "authors": 0.0,
+      "comments": 100.0,
+      "doi": 100.0,
+      "update_date": 0.0,
+      "source": 0.0
+    },
+    "duplicate_ids": 26,
+    "duplicate_abstracts": 64
+  },
+  "clean_records": 287203,
+  "labels": [
+    "cs.LG",
+    "cs.CV",
+    "cs.CL",
+    "cs.AI",
+    "stat.ML",
+    "cs.NE",
+    "cs.RO",
+    "cs.CR",
+    "eess.IV",
+    "cs.IR"
+  ],
+  "sample_size": 44853,
+  "split_sizes": {
+    "train": 31397,
+    "val": 6728,
+    "test": 6728,
+    "eval_subset": 300
+  },
+  "eda": {
+    "top_categories": {
+      "top_categories": {
+        "cs.LG": 80394,
+        "cs.CV": 71067,
+        "cs.CL": 37235,
+        "cs.AI": 28678,
+        "stat.ML": 13880,
+        "cs.NE": 6699,
+        "cs.RO": 5254,
+        "cs.CR": 4372,
+        "eess.IV": 2771,
+        "cs.IR": 2710,
+        "cs.SE": 2575,
+        "cs.CY": 2292,
+        "cs.HC": 2184,
+        "cs.SD": 1732,
+        "stat.ME": 1616
+      },
+      "top_n_share": 0.9173,
+      "n_primary_categories": 147
+    },
+    "abstract_length": {
+      "mean": 171.0,
+      "std": 45.8,
+      "min": 20,
+      "max": 552,
+      "quantiles": {
+        "p5": 95.0,
+        "p25": 140.0,
+        "p50": 171.0,
+        "p75": 202.0,
+        "p95": 248.0
+      }
+    },
+    "title_length": {
+      "mean": 9.6,
+      "std": 3.1,
+      "min": 1,
+      "max": 36,
+      "quantiles": {
+        "p5": 5.0,
+        "p25": 7.0,
+        "p50": 9.0,
+        "p75": 11.0,
+        "p95": 15.0
+      }
+    },
+    "missing_values": {
+      "missing_pct": {
+        "id": 0.0,
+        "title": 0.0,
+        "abstract": 0.0,
+        "categories": 0.0,
+        "authors": 0.0,
+        "update_date": 0.0
+      },
+      "fields_not_in_source": [
+        "comments",
+        "doi"
+      ]
+    },
+    "frequent_words": {
+      "top_unigrams": {
+        "model": 37199,
+        "models": 37029,
+        "data": 32848,
+        "learning": 31247,
+        "performance": 22840,
+        "methods": 20213,
+        "framework": 19385,
+        "method": 17030,
+        "training": 16496,
+        "tasks": 15126,
+        "language": 14248,
+        "neural": 13882,
+        "demonstrate": 12842,
+        "existing": 12808,
+        "information": 12363,
+        "large": 11958,
+        "experiments": 11881,
+        "network": 11863,
+        "systems": 11858,
+        "work": 11691
+      },
+      "top_bigrams": {
+        "language models": 6647,
+        "neural networks": 6096,
+        "large language": 5953,
+        "machine learning": 4474,
+        "neural network": 4035,
+        "reinforcement learning": 3676,
+        "models llms": 3636,
+        "deep learning": 3510,
+        "extensive experiments": 3281,
+        "natural language": 2355,
+        "existing methods": 2106,
+        "training data": 1976,
+        "language model": 1602,
+        "code available": 1582,
+        "deep neural": 1514,
+        "experiments demonstrate": 1388,
+        "publicly available": 1337,
+        "learning models": 1313,
+        "artificial intelligence": 1287,
+        "state-of-the-art performance": 1172
+      }
+    },
+    "category_imbalance": {
+      "before": {
+        "cs.LG": 80394,
+        "cs.CV": 71067,
+        "cs.CL": 37235,
+        "cs.AI": 28678,
+        "stat.ML": 13880,
+        "cs.NE": 6699,
+        "cs.RO": 5254,
+        "cs.CR": 4372,
+        "eess.IV": 2771,
+        "cs.IR": 2710
+      },
+      "after": {
+        "cs.LG": 5000,
+        "cs.CV": 5000,
+        "cs.CL": 5000,
+        "cs.AI": 5000,
+        "stat.ML": 5000,
+        "cs.NE": 5000,
+        "cs.RO": 5000,
+        "cs.CR": 4372,
+        "eess.IV": 2771,
+        "cs.IR": 2710
+      },
+      "year_counts": {
+        "1993": 6,
+        "1994": 174,
+        "1995": 250,
+        "1996": 228,
+        "1997": 182,
+        "1998": 66,
+        "1999": 74,
+        "2000": 209,
+        "2001": 106,
+        "2002": 147,
+        "2003": 144,
+        "2004": 128,
+        "2005": 132,
+        "2006": 203,
+        "2007": 258,
+        "2008": 443,
+        "2009": 606,
+        "2010": 740,
+        "2011": 1147,
+        "2012": 2091,
+        "2013": 2759,
+        "2014": 2788,
+        "2015": 3651,
+        "2016": 6445,
+        "2017": 9595,
+        "2018": 12345,
+        "2019": 14845,
+        "2020": 16114,
+        "2021": 15634,
+        "2022": 16190,
+        "2023": 15183,
+        "2024": 12649,
+        "2025": 93421,
+        "2026": 58250
+      },
+      "imbalance_before": 29.67,
+      "imbalance_after": 1.85,
+      "cross_listed_share": 0.0
+    },
+    "word_frequency": {
+      "vocabulary_size": 129165,
+      "total_tokens": 4683219,
+      "hapax_legomena": 61957,
+      "hapax_share_of_vocab": 0.4797,
+      "coverage_at": {
+        "1000": 0.5904,
+        "5000": 0.8655,
+        "20000": 0.9538,
+        "50000": 0.9794
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "backend": "dense",
+  "recall@1": 0.71,
+  "recall@5": 0.88,
+  "recall@10": 0.91,
+  "mrr@10": 0.7855171957671958,
+  "category_precision@10": 0.6229999999999999,
+  "median_latency_ms": 22.249749999900814,
+  "n_queries": 300,
+  "evidence_threshold": {
+    "threshold": 0.4771,
+    "threshold_rule": "keep 95% of in-domain queries answerable",
+    "in_domain_answered": 0.95,
+    "out_domain_refused": 0.95,
+    "best_balanced_threshold": 0.4921,
+    "best_balanced_accuracy": 0.9725,
+    "in_domain_median": 0.6087,
+    "out_domain_median": 0.3309,
+    "n_in": 200,
+    "n_out": 20
+  }
+}

@@ -1,0 +1,37 @@
+# DG4NLP Project — core dependencies (Python 3.11+)
+# Lower bounds only; after installing, run:  pip freeze > requirements-lock.txt
+# and submit the lock file so the exact versions you used are recorded.
+
+# --- Data handling and analysis ---
+pandas>=2.0          # tabular data manipulation
+numpy>=1.24          # numerical arrays
+pyarrow>=14.0        # fast Parquet read/write for processed splits
+
+# --- Visualisation ---
+matplotlib>=3.7      # base plotting library
+seaborn>=0.13        # statistical plots built on matplotlib
+
+# --- Traditional NLP / ML ---
+scikit-learn>=1.3    # TF-IDF, Naive Bayes, Logistic Regression, Linear SVM, metrics
+nltk>=3.8            # tokenisation, stop words, lemmatisation
+joblib>=1.3          # saving/loading trained sklearn pipelines
+
+# --- Deep learning / transformers ---
+torch>=2.1           # backend for transformer models (CPU build on Windows by default)
+transformers>=4.40   # FLAN-T5 title generation
+sentencepiece>=0.1.99  # T5 tokeniser dependency
+sentence-transformers>=2.6  # sentence embeddings (semantic similarity, retrieval)
+
+# --- Evaluation ---
+rouge-score>=0.1.2   # ROUGE-1/2/L for title generation
+
+# --- Application ---
+streamlit>=1.50       # local web interface (uses width="stretch" API)
+
+# --- LLM integration and configuration ---
+requests>=2.31       # HTTP calls to Ollama or an OpenAI-compatible API (no vendor SDK needed)
+python-dotenv>=1.0   # loads settings from .env (never hardcode API keys)
+
+# --- Utilities and testing ---
+tqdm>=4.66           # progress bars for long-running loops
+pytest>=7.4          # unit testing
